@@ -1,0 +1,26 @@
+
+.input-group-text{
+    background-color: transparent;
+    border-color: rgb(85, 84, 84) !important;
+}
+
+.form-control{
+    background-color: transparent !important;
+    height: 40px !important;
+}
+
+.form-control-dark{
+    color: $white !important;
+    border-color: rgb(85, 84, 84) !important;
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.form-control > option{
+    color: black;
+    height: 70px !important;
+    padding: 10px !important
+}

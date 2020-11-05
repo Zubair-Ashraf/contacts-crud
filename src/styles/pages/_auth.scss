@@ -1,0 +1,28 @@
+.auth-wrapper {
+  background-image:
+  linear-gradient(to bottom,$primary,$dark);
+}
+
+.text-gradient{
+    background: -webkit-linear-gradient($primary,#494b53);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+} 
+
+.auth-form{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.auth-form::-webkit-scrollbar{
+  display: none;
+}
+
+.seperator{
+  height: 5px;
+}
+
+.rounded-2{
+  border-radius: 10px;
+}

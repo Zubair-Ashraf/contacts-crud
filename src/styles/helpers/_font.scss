@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    src: local("Poppins"), local("Poppins"),
+        url(https://www.fonts.googleapis.com/css2?family=Poppins:display=swap) format("woff2");
+}
+
+@font-face {
+    font-family: "Amiri";
+    font-style: normal;
+    src: local("Amiri"), local("Amiri"),
+        url(https://fonts.googleapis.com/css2?family=Amiri:display=swap) format("woff2");
+}
+
+// html { font-size: calc(0.6em + 1vw); }
+
+img { max-width: 100%;
+    height: auto; }
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
