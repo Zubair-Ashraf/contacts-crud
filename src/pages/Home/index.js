@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Form, Nav } from "react-bootstrap";
-import { Layout } from "components";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import { Layout, NavDrawer, ProductSection } from "components";
 
 const Home = () => {
   return (
@@ -8,17 +8,12 @@ const Home = () => {
       <Container fluid>
         <Row style={{ marginLeft: 45 }}>
           <Col md={3} className="drawer-col-md-3">
-            <Nav className="flex-column nav-drawer">
-              <Nav.Link eventKey="/settings/profile" className="pl-3 py-2">
-                Hello
-              </Nav.Link>
-              <Nav.Link eventKey="/settings/security" className="pl-3 py-2">
-                Hello
-              </Nav.Link>
-              <Nav.Link eventKey="/term-conditions" className="pl-3 py-2">
-                Hello
-              </Nav.Link>
-            </Nav>
+            <NavDrawer />
+          </Col>
+          <Col md={9}>
+            <div className="mt-3">
+              <ProductSection title={"iPhone"} />
+            </div>
           </Col>
         </Row>
       </Container>

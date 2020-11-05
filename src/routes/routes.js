@@ -1,4 +1,4 @@
-import { Register, Login, ResetPassword, Home } from "pages";
+import { Register, Login, ResetPassword, Home, Shop } from "pages";
 
 const routes = [
   {
@@ -19,6 +19,11 @@ const routes = [
   {
     component: Home,
     path: "/",
+    isPublic: true,
+  },
+  {
+    component: Shop,
+    path: "/shop",
     isPublic: true,
   },
 ];
