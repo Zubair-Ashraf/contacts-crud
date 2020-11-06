@@ -1,4 +1,11 @@
-import { Register, Login, ResetPassword, Home, Shop } from "pages";
+import {
+  Register,
+  Login,
+  ResetPassword,
+  Home,
+  Shop,
+  ProductDetail,
+} from "pages";
 
 const routes = [
   {
@@ -24,6 +31,11 @@ const routes = [
   {
     component: Shop,
     path: "/shop",
+    isPublic: true,
+  },
+  {
+    component: ProductDetail,
+    path: "/product/:name",
     isPublic: true,
   },
 ];
