@@ -27,6 +27,30 @@ const NavDrawer = ({
       <Nav.Link
         eventKey="/shop"
         className="pl-3 py-2"
+        onClick={() =>
+          push({
+            pathname: "/pre-owned",
+            state: { title: "Pre Owned" },
+          })
+        }
+      >
+        <FontAwesomeIcon icon={faPlusSquare} className="mr-2" /> Pre owned
+      </Nav.Link>
+      <Nav.Link
+        eventKey="/shop"
+        className="pl-3 py-2"
+        onClick={() =>
+          push({
+            pathname: "/shop-new",
+            state: { title: "Shop New" },
+          })
+        }
+      >
+        <FontAwesomeIcon icon={faPlusSquare} className="mr-2" /> New Devices
+      </Nav.Link>
+      <Nav.Link
+        eventKey="/shop"
+        className="pl-3 py-2"
         onClick={() => push("/shop")}
       >
         <FontAwesomeIcon icon={faPlusSquare} className="mr-2" /> See More

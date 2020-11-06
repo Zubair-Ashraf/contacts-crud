@@ -5,6 +5,8 @@ import {
   Home,
   Shop,
   ProductDetail,
+  CategoryProduct,
+  Cart,
 } from "pages";
 
 const routes = [
@@ -36,6 +38,21 @@ const routes = [
   {
     component: ProductDetail,
     path: "/product/:name",
+    isPublic: true,
+  },
+  {
+    component: CategoryProduct,
+    path: "/shop-new",
+    isPublic: true,
+  },
+  {
+    component: CategoryProduct,
+    path: "/pre-owned",
+    isPublic: true,
+  },
+  {
+    component: Cart,
+    path: "/cart",
     isPublic: true,
   },
 ];
